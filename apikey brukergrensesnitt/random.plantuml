@@ -1,0 +1,32 @@
+@startuml Argflix
+class App{
+    oksdok : int
+    
+}
+
+class Visuell_Media{
+    name : str
+    år : int
+    IMBN : int
+}
+
+class Serie{
+    antall_sesonger : int
+}
+class Film{
+    lengde : int
+}
+
+class Bucket_List{
+    name : str
+    favoritter : list
+    leggtil()
+    vis()
+
+    
+}
+
+Visuell_Media <|-- Film
+Visuell_Media <|-- Serie
+
+@enduml
